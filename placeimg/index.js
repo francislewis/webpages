@@ -1,3 +1,6 @@
+var valx
+var valy
+
 function getValues() {
 
   //Get x value
