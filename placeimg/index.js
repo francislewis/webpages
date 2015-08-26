@@ -1,6 +1,7 @@
 var valx
 var valy
 var string
+var finalString
 
 console.log("defined");
 function getValues() {
@@ -26,7 +27,11 @@ var encodedString = btoa(string);
 console.log("encoded");
 
 //Add html stuff to encoded data and place in html
-document.getElementById('final').innerHTML = `<img src="data:image/svg+xml;base64,${encodedString}">`
+
+var finalString = `<img src="data:image/svg+xml;base64,${encodedString}">`;
+
+document.getElementById('final').innerHTML = he.encode(finalString);
+
 console.log("added");
 
 }
