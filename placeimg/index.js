@@ -1,6 +1,6 @@
 var valx
 var valy
-
+console.log("defined");
 function getValues() {
 
   //Get x value
@@ -8,7 +8,7 @@ function getValues() {
 
   //Get y value
   var valy = document.getElementById('valy').value;
-
+ console.log("got values");
 }
 
   // Define the string
@@ -17,11 +17,13 @@ function getValues() {
   <defs><style type="text/css"><![CDATA[#holder_14f672961df text { fill:#AAAAAA;font-weight:bold;font-family:Arial, Helvetica, Open Sans, sans-serif, monospace;font-size:25pt } ]]></style></defs>
   <g id="holder_14f672961df"><rect width="${valx}" height="${valy}" fill="#EEEEEE"/><g>
   <text x="185.1328125" y="261.1">${valx}x${valy}</text></g></g></svg>`;
-
+console.log("made string");
 // Encode the String
 var encodedString = btoa(string);
+console.log("encoded");
 
 //Add html stuff to encoded data and place in html
 document.getElementById('final').innerHTML = `<img src="data:image/svg+xml;base64,${encodedString}">`
+console.log("added");
 
 
