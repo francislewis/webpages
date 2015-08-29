@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Placeimg - Create placeholder images easily</title>
 
 
 </head>
+
 <body>
     <h1>PlaceImg</h1>
     <p>Create custom sized placeholder images easily</p>
-    <br><br><br>
+    <br>
+    <br>
+    <br>
     <h2>How it works</h2>
-    <p>Firstly, the pixel values you enter are stored in a variable which is then called in a function when the create button is pressed.<br>
-    These values are placed using Template strings into an SVG in the width/height etc. values.<br>
-    This SVG is then converted to base 64 using the btoa() function and finally encoded with HTML entitys so it is displayed as an img tag and not the actual image. To see the full source code, check it out on <a href="https://github.com/francislewis/webpages/placeimg/">Github</a>.</p>
+    <p>Firstly, the pixel values you enter are stored in a variable which is then called in a function when the create button is pressed.
+        <br> These values are placed using Template strings into an SVG in the width/height etc. values.
+        <br> This SVG is then converted to base 64 using the btoa() function and finally encoded with HTML entitys so it is displayed as an img tag and not the actual image. To see the full source code, check it out on <a href="https://github.com/francislewis/webpages/placeimg/">Github</a>.</p>
     <p>This is compatible with browsers Chrome 41+, Edge, Firefox 34+ and Opera 28+. This is because of the use of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a>.</p>
-    <br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <p>Type in what size you want your image to be (in pixels)</p>
-    <input type="text" id="valx" placeholder="Width"/>
-    <input type="text" id="valy" placeholder="Height"/>
-    <input type="submit" value="Make my image" onclick="getValues();"/>
+    <input type="text" id="valx" placeholder="Width" />
+    <input type="text" id="valy" placeholder="Height" />
+    <input type="submit" value="Make my image" onclick="getValues();" />
     <p id="final">Tag will apppear here</p>
-    
-        <script src="he.js"></script>
-        <script src="index.js"></script>
+
+    <script src="he.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
